@@ -1,0 +1,5 @@
+interface:
+  display_name: "Lightroom 调色导演"
+  short_description: "覆盖专业场景、风格、批次、参考匹配与成片复审的调色工作流"
+  brand_color: "#C99A4B"
+  default_prompt: "Use $lightroom-color-director to diagnose the photograph, translate intent into a bounded professional style, keep a series consistent, and review the rendered result."

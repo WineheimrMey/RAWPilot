@@ -1,0 +1,42 @@
+# Local credentials and application state
+.env
+*.env
+!.env.example
+*.log
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build and user-generated outputs
+build/
+dist/
+output/
+.tmp/
+
+# User photographs and Lightroom sidecars
+*.arw
+*.cr2
+*.cr3
+*.nef
+*.raf
+*.dng
+*.jpg
+*.jpeg
+*.xmp
+*.edit_plan.json
+
+# Local design captures may contain user photographs
+ui_*.png
+
+# Local agent/editor state
+.agents/
+.codex/
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
