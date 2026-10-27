@@ -1,8 +1,24 @@
 # 原光 RAWPilot
 
+## 主界面
+
+![原光 RAWPilot 主界面：DSC_2649 后厨纪实照片的输入与输出同页对照](docs/images/rawpilot-workbench.png)
+
+暗房工作台把 RAW 导入、可编辑的自然语言调色建议、输入／输出对照、诊断、配方和后续修订放在同一页。上图为当前本地桌面界面载回历史项目后的实际截图，待确认状态表示可继续修改建议并再次执行。
+
+## 调色前后对比 · DSC_2649
+
+![DSC_2649 调色前后对比：左为相机内嵌 JPEG 预览，右为 Lightroom Classic 成片](docs/images/dsc2649-before-after.png)
+
+后厨纪实案例的调色方向：修正白平衡、控制门口高光，调整人物与背景层次，并保留蒸汽的烟火气氛围。
+
+左侧为从原始 NEF 重新提取的相机内嵌 JPEG 预览，右侧为 2026 年 7 月 24 日真实运行保存的 Lightroom Classic 输出。展示图仅统一排版与等比例缩放，未额外调色；相机预览自带相机处理，不等同于 Lightroom 零调整基准。
+
+[查看展示素材说明](docs/SHOWCASE.md)。
+
 Windows RAW 后期 Agent MVP。它在本机从 RAW 中提取内嵌 JPEG 预览和 EXIF，只把压缩预览与少量元数据发送给兼容 OpenAI `/chat/completions` 的 Qwen Vision/LLM API，并为每张原片生成同名 Adobe Camera Raw XMP sidecar。原片不会被修改，也不会上传完整 RAW。
 
-> Privacy note: never commit API keys or photographs. Local credentials live in `%APPDATA%\RAWPilot\.env`; RAW files, rendered JPEGs, XMP sidecars, build outputs, and local project state are excluded from this repository.
+> Privacy note: never commit API keys or private photographs. Local credentials live in `%APPDATA%\RAWPilot\.env`; RAW files, rendered JPEGs, XMP sidecars, build outputs, and local project state are excluded from this repository. Only the maintainer-selected, documented showcase images in `docs/images/` are published intentionally.
 
 ## 功能
 
